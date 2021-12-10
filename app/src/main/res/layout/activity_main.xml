@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="11dp">
+    <!-- пример комментария-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/first_int"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:hint="Первое число"
+            android:inputType="number"
+            android:padding="15dp"
+            android:textAlignment="center"
+            android:textSize="18dp" />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="+"
+            android:textAlignment="center"
+            android:textSize="48dp"
+            tools:ignore="Suspicious0dp">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/second_int"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:hint="Второе число"
+            android:inputType="number"
+            android:padding="15dp"
+            android:textAlignment="center"
+            android:textSize="18dp" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/angry_btn"
+
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:layout_margin="42dp"
+        android:background="@drawable/buttonshape"
+        android:rotation="0"
+        android:shadowColor="#000000"
+        android:shadowDx="2"
+        android:shadowDy="4"
+        android:shadowRadius="7"
+        android:text="="
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+
+        android:textSize="50dp"
+
+        />
+
+    <Switch
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="30dp"
+        android:text="Переключатель"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        tools:ignore="UseSwitchCompatOrMaterialXml">
+
+    </Switch>
+<CheckBox
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:text="Первый чек"
+    android:textColor="@color/design_default_color_primary"
+    android:textStyle="italic">
+
+</CheckBox>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Второй чек"
+        android:textColor="@color/design_default_color_error"
+        android:textStyle="italic">
+
+
+
+    </CheckBox>
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:shadowColor="@color/white"
+        android:layout_margin="20dp"
+        android:textColor="@color/teal_700"
+        android:shadowDx="2"
+        android:shadowDy="4"
+        android:shadowRadius="7"
+        android:textSize="25dp"
+        android:layout_height="wrap_content">
+
+
+    </ToggleButton>
+
+
+
+</LinearLayout>
