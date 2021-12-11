@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+
+        <Button
+            android:id="@+id/backbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Досье № 1" />
+
+        <TextView
+            android:id="@+id/firstName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/backbutton"
+            android:text="First Name" />
+
+        <EditText
+            android:id="@+id/editFirstName"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/backbutton"
+            android:layout_marginLeft="37dp"
+            android:layout_marginTop="0dp"
+            android:layout_toRightOf="@id/firstName"
+            android:width="100px" />
+
+        <EditText
+            android:id="@+id/editLastName"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editFirstName"
+            android:layout_alignLeft="@id/editFirstName"
+            android:width="100px" />
+
+        <TextView
+            android:id="@+id/lastName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editFirstName"
+            android:layout_alignBaseline="@id/editLastName"
+            android:text="Last Name" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editLastName"
+            android:layout_alignLeft="@id/editFirstName"
+            android:width="100px" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editFirstName"
+            android:layout_alignBaseline="@id/editText"
+            android:text="Text" />
+
+        <EditText
+            android:id="@+id/edit_phone"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editText"
+            android:layout_alignLeft="@id/editFirstName"
+            android:width="100px" />
+
+        <TextView
+            android:id="@+id/phone_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editFirstName"
+            android:layout_alignBaseline="@id/edit_phone"
+            android:text="Phone" />
+
+        <EditText
+            android:id="@+id/edit_number"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edit_phone"
+            android:layout_alignLeft="@id/editFirstName"
+            android:width="100px" />
+
+        <TextView
+            android:id="@+id/phone_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editFirstName"
+            android:layout_alignBaseline="@id/edit_number"
+            android:text="Number" />
+
+
+        <EditText
+            android:id="@+id/edit_password"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edit_number"
+            android:layout_alignLeft="@id/editFirstName"
+            android:width="100px" />
+
+        <TextView
+            android:id="@+id/password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editFirstName"
+            android:layout_alignBaseline="@id/edit_password"
+            android:text="Password" />
+
+        <EditText
+            android:id="@+id/edit_emai"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edit_password"
+            android:layout_alignLeft="@id/editFirstName"
+            android:width="100px" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editFirstName"
+            android:layout_alignBaseline="@id/edit_emai"
+            android:text="Email" />
+
+        <EditText
+            android:id="@+id/edit_bio"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edit_emai"
+            android:layout_alignLeft="@id/editFirstName"
+            android:width="100px" />
+
+        <TextView
+            android:id="@+id/bio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editFirstName"
+            android:layout_alignBaseline="@id/edit_bio"
+            android:text="Bio" />
+
+        <EditText
+            android:id="@+id/edit_other_values"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edit_bio"
+            android:layout_alignLeft="@id/editFirstName"
+            android:width="100px" />
+
+        <TextView
+            android:id="@+id/other_values"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editFirstName"
+            android:layout_alignBaseline="@id/edit_other_values"
+            android:text="Other values" />
+
+
+    </RelativeLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
