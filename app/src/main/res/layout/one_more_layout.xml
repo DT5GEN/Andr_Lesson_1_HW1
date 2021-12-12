@@ -3,10 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-
-
-    >
+    android:layout_height="match_parent">
 
 
     <RelativeLayout
@@ -15,12 +12,8 @@
         android:padding="20dp">
 
         <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/geekbrains_1_140x140"
-            android:backgroundTint="@color/purple_200"
-            android:backgroundTintMode="src_atop"
-            android:scaleY="0.6">
+            android:id="@+id/background_brain"
+            style="@style/style_background_brain">
 
 
         </RelativeLayout>
@@ -37,7 +30,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/backbutton"
-            android:text="First Name"
+            android:text="@string/first_name"
+            android:textColor="#D5272727"
             android:textStyle="bold" />
 
         <EditText
@@ -53,167 +47,112 @@
 
         <EditText
             android:id="@+id/editLastName"
-            android:layout_width="240dp"
-            android:layout_height="wrap_content"
+            style="@style/style_edit_text_fields"
             android:layout_below="@id/editFirstName"
-            android:layout_alignLeft="@id/editFirstName"
-            android:width="100px"
             android:inputType="text" />
 
         <TextView
             android:id="@+id/lastName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/editFirstName"
+            style="@style/style_field_names"
             android:layout_alignBaseline="@id/editLastName"
-            android:text="Last Name"
-            android:textStyle="bold" />
+            android:text="@string/last_name" />
 
         <EditText
             android:id="@+id/edit_birthday"
-            android:layout_width="240dp"
-            android:layout_height="wrap_content"
+            style="@style/style_edit_text_fields"
             android:layout_below="@id/editLastName"
-            android:layout_alignLeft="@id/editFirstName"
-            android:width="100px"
             android:inputType="date" />
 
         <TextView
             android:id="@+id/birthday"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/edit_birthday"
+            style="@style/style_field_names"
             android:layout_alignBaseline="@id/edit_birthday"
-            android:text="Birthday"
-            android:textStyle="bold" />
+            android:text="@string/birthday" />
 
         <EditText
             android:id="@+id/edit_text"
-            android:layout_width="240dp"
-            android:layout_height="wrap_content"
+            style="@style/style_edit_text_fields"
             android:layout_below="@id/edit_birthday"
-            android:layout_alignLeft="@id/editFirstName"
-            android:width="100px"
             android:inputType="text" />
 
         <TextView
             android:id="@+id/text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/editFirstName"
+            style="@style/style_field_names"
             android:layout_alignBaseline="@id/edit_text"
-            android:text="Text"
-            android:textStyle="bold" />
+            android:text="@string/text" />
 
         <EditText
             android:id="@+id/edit_phone"
-            android:layout_width="240dp"
-            android:layout_height="wrap_content"
+            style="@style/style_edit_text_fields"
             android:layout_below="@id/edit_text"
-            android:layout_alignLeft="@id/editFirstName"
-            android:width="100px"
             android:inputType="phone" />
 
         <TextView
             android:id="@+id/phone_number"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/editFirstName"
+            style="@style/style_field_names"
             android:layout_alignBaseline="@id/edit_phone"
-            android:text="Phone"
-            android:textStyle="bold" />
+            android:text="@string/phone" />
 
         <EditText
             android:id="@+id/edit_number"
-            android:layout_width="240dp"
-            android:layout_height="wrap_content"
+            style="@style/style_edit_text_fields"
             android:layout_below="@id/edit_phone"
-            android:layout_alignLeft="@id/editFirstName"
-            android:width="100px"
             android:inputType="number" />
 
         <TextView
             android:id="@+id/phone_number"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/editFirstName"
+            style="@style/style_field_names"
             android:layout_alignBaseline="@id/edit_number"
-            android:text="Number"
-            android:textStyle="bold" />
+            android:text="@string/number" />
 
 
         <EditText
             android:id="@+id/edit_password"
-            android:layout_width="240dp"
-            android:layout_height="wrap_content"
+            style="@style/style_edit_text_fields"
             android:layout_below="@id/edit_number"
-            android:layout_alignLeft="@id/editFirstName"
-            android:width="100px"
             android:inputType="text" />
 
         <TextView
             android:id="@+id/password"
-
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/editFirstName"
+            style="@style/style_field_names"
             android:layout_alignBaseline="@id/edit_password"
-            android:text="Password"
-            android:textStyle="bold" />
+            android:text="@string/password" />
 
         <EditText
             android:id="@+id/edit_emai"
-            android:layout_width="240dp"
-            android:layout_height="wrap_content"
+            style="@style/style_edit_text_fields"
             android:layout_below="@id/edit_password"
-            android:layout_alignLeft="@id/editFirstName"
-            android:width="100px"
             android:inputType="text" />
 
         <TextView
             android:id="@+id/email"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/editFirstName"
+            style="@style/style_field_names"
             android:layout_alignBaseline="@id/edit_emai"
-            android:text="Email"
-            android:textStyle="bold" />
+            android:text="@string/email" />
 
         <EditText
             android:id="@+id/edit_bio"
-            android:layout_width="240dp"
-            android:layout_height="wrap_content"
+            style="@style/style_edit_text_fields"
             android:layout_below="@id/edit_emai"
-            android:layout_alignLeft="@id/editFirstName"
-            android:width="100px"
             android:inputType="text" />
 
         <TextView
             android:id="@+id/bio"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/editFirstName"
+            style="@style/style_field_names"
             android:layout_alignBaseline="@id/edit_bio"
-            android:text="Bio"
-            android:textStyle="bold" />
+            android:text="@string/bio" />
 
         <EditText
             android:id="@+id/edit_other_values"
-            android:layout_width="240dp"
-            android:layout_height="wrap_content"
+            style="@style/style_edit_text_fields"
             android:layout_below="@id/edit_bio"
-            android:layout_alignLeft="@id/editFirstName"
-            android:width="100px"
             android:inputType="text" />
 
         <TextView
             android:id="@+id/other_values"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/editFirstName"
+            style="@style/style_field_names"
             android:layout_alignBaseline="@id/edit_other_values"
-            android:text="Other values"
-            android:textStyle="bold" />
+            android:text="@string/other_values" />
 
 
     </RelativeLayout>
