@@ -100,7 +100,7 @@
             android:inputType="number" />
 
         <TextView
-            android:id="@+id/phone_number"
+            android:id="@+id/ph_number"
             style="@style/style_field_names"
             android:layout_alignBaseline="@id/edit_number"
             android:text="@string/number" />

@@ -26,7 +26,7 @@
         <item name="android:layout_width">240dp</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_alignLeft">@id/editFirstName</item>
-        <item name="android:width">100px</item>
+        <item name="android:width">133dp</item>
 
 
     </style>
@@ -41,9 +41,6 @@
 
     </style>
 
-    android:layout_margin="10dp"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
 
 
     <style name="style_change_task">
