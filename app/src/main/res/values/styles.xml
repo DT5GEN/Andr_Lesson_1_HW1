@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <style name="MyStyle.ButtonMain">
         ..
         <item name="android:background">@drawable/buttonshape</item>
@@ -8,5 +9,47 @@
 
     <style name="MyStyle">M1</style>
 
+
+    <style name="style_background_brain">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/geekbrains_1_140x140</item>
+        <item name="android:backgroundTintMode">src_atop</item>
+        <item name="android:backgroundTint">@color/purple_200</item>
+        <item name="android:scaleY">0.6</item>
+
+
+    </style>
+
+
+    <style name="style_edit_text_fields">
+        <item name="android:layout_width">240dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignLeft">@id/editFirstName</item>
+        <item name="android:width">133dp</item>
+
+
+    </style>
+
+
+    <style name="style_field_names">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_below">@id/editFirstName</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#D5272727</item>
+
+    </style>
+
+
+
+    <style name="style_change_task">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+
+    </style>
 
 </resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <Button
+            android:id="@+id/task1"
+            style="@style/style_change_task"
+            android:text="@string/ch_tsk_1" />
+
+        <Button
+            android:id="@+id/task2"
+            style="@style/style_change_task"
+            android:text="@string/ch_tsk_2" />
+
+        <Button
+            android:id="@+id/task3"
+            style="@style/style_change_task"
+            android:text="@string/ch_tsk_3" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

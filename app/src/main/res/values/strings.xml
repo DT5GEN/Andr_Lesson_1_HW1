@@ -1,3 +1,20 @@
 <resources>
-    <string name="app_name">Andr-Lesson-1</string>
+    <string name="app_name">Home Work 1</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="birthday">Birthday</string>
+    <string name="text">Text</string>
+    <string name="phone">Phone</string>
+    <string name="number">Number</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="bio">Bio</string>
+    <string name="other_values">Other values</string>
+    <string name="ch_tsk_3">Задание 3</string>
+    <string name="ch_tsk_2">Задание 2</string>
+    <string name="ch_tsk_1">Задание 1</string>
+    <string name="task1_hint_sum_number1">Первое число</string>
+    <string name="task1_hint_sum_number2">Второе число</string>
+
+
 </resources>

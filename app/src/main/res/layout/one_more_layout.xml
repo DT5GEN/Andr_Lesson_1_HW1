@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+
+        <RelativeLayout
+            android:id="@+id/background_brain"
+            style="@style/style_background_brain">
+
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/backbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Досье № 1" />
+
+        <TextView
+            android:id="@+id/firstName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/backbutton"
+            android:text="@string/first_name"
+            android:textColor="#D5272727"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editFirstName"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/backbutton"
+            android:layout_marginLeft="37dp"
+            android:layout_marginTop="0dp"
+            android:layout_toRightOf="@id/firstName"
+            android:width="100px"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/editLastName"
+            style="@style/style_edit_text_fields"
+            android:layout_below="@id/editFirstName"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/lastName"
+            style="@style/style_field_names"
+            android:layout_alignBaseline="@id/editLastName"
+            android:text="@string/last_name" />
+
+        <EditText
+            android:id="@+id/edit_birthday"
+            style="@style/style_edit_text_fields"
+            android:layout_below="@id/editLastName"
+            android:inputType="date" />
+
+        <TextView
+            android:id="@+id/birthday"
+            style="@style/style_field_names"
+            android:layout_alignBaseline="@id/edit_birthday"
+            android:text="@string/birthday" />
+
+        <EditText
+            android:id="@+id/edit_text"
+            style="@style/style_edit_text_fields"
+            android:layout_below="@id/edit_birthday"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/text"
+            style="@style/style_field_names"
+            android:layout_alignBaseline="@id/edit_text"
+            android:text="@string/text" />
+
+        <EditText
+            android:id="@+id/edit_phone"
+            style="@style/style_edit_text_fields"
+            android:layout_below="@id/edit_text"
+            android:inputType="phone" />
+
+        <TextView
+            android:id="@+id/phone_number"
+            style="@style/style_field_names"
+            android:layout_alignBaseline="@id/edit_phone"
+            android:text="@string/phone" />
+
+        <EditText
+            android:id="@+id/edit_number"
+            style="@style/style_edit_text_fields"
+            android:layout_below="@id/edit_phone"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/ph_number"
+            style="@style/style_field_names"
+            android:layout_alignBaseline="@id/edit_number"
+            android:text="@string/number" />
+
+
+        <EditText
+            android:id="@+id/edit_password"
+            style="@style/style_edit_text_fields"
+            android:layout_below="@id/edit_number"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/password"
+            style="@style/style_field_names"
+            android:layout_alignBaseline="@id/edit_password"
+            android:text="@string/password" />
+
+        <EditText
+            android:id="@+id/edit_emai"
+            style="@style/style_edit_text_fields"
+            android:layout_below="@id/edit_password"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/email"
+            style="@style/style_field_names"
+            android:layout_alignBaseline="@id/edit_emai"
+            android:text="@string/email" />
+
+        <EditText
+            android:id="@+id/edit_bio"
+            style="@style/style_edit_text_fields"
+            android:layout_below="@id/edit_emai"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/bio"
+            style="@style/style_field_names"
+            android:layout_alignBaseline="@id/edit_bio"
+            android:text="@string/bio" />
+
+        <EditText
+            android:id="@+id/edit_other_values"
+            style="@style/style_edit_text_fields"
+            android:layout_below="@id/edit_bio"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/other_values"
+            style="@style/style_field_names"
+            android:layout_alignBaseline="@id/edit_other_values"
+            android:text="@string/other_values" />
+
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
